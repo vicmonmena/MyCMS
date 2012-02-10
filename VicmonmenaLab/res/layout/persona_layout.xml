@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/basicstyle_wc"
+    android:orientation="vertical">
+
+    <LinearLayout      
+	  style="@style/basicstyle_fp"
+	  android:orientation="horizontal" 
+	  android:background="#00F"
+	  android:layout_marginTop="5dp">
+	    <Button 
+	      android:id="@+id/showForm" 
+	      style="@style/basicstyle_wc" 
+	      android:onClick="verFormulario" 
+	      android:text="Ver formulario"
+	      android:enabled="false"/>
+	    	
+	    <Button 
+	      android:id="@+id/showList" 
+	      style="@style/basicstyle_wc" 
+	      android:onClick="verListado" 
+	      android:text="Ver listado"/>
+    </LinearLayout>
+    
+    <LinearLayout
+      android:id="@+id/formularioLayout"
+	  style="@style/basicstyle_fp"
+	  android:orientation="vertical" 
+	  android:background="#F00"
+	  android:layout_marginTop="5dp">
+
+        <LinearLayout	        
+		  style="@style/basicstyle_fp"
+		  android:orientation="horizontal">		    
+	        <EditText android:id="@+id/nombreTxt" style="@style/basicstyle_wc" android:text="Nombre"/>
+	        <EditText android:id="@+id/apellidosTxt" style="@style/basicstyle_wc" android:text="Apellidos"/>
+        </LinearLayout>
+        
+        <LinearLayout        
+		  style="@style/basicstyle_fp"
+		  android:orientation="horizontal">
+	        <EditText android:id="@+id/dniTxt" style="@style/basicstyle_wc" android:text="DNI"/>
+	        <EditText android:id="@+id/fechaNacimientoTxt" style="@style/basicstyle_wc" android:text="(dd-mm-aaaa)"/>
+		</LinearLayout>
+		
+		<LinearLayout        
+	      style="@style/basicstyle_fp"
+	      android:orientation="horizontal">
+	        <EditText android:id="@+id/direccionTxt" style="@style/basicstyle_wc" android:text="Dirección"/>
+	        <EditText android:id="@+id/emailTxt" style="@style/basicstyle_wc" android:text="Email"/>
+    	</LinearLayout>
+    		    
+	        <Button android:id="@+id/add" style="@style/basicstyle_fp" android:onClick="nuevaPersona" android:text="Registrar persona"/>	            	
+	</LinearLayout>
+
+    <LinearLayout
+      android:id="@+id/listadoLayout"
+	  style="@style/basicstyle_fp"
+	  android:orientation="vertical" 
+	  android:background="#0F0"
+	  android:visibility="invisible"
+	  android:layout_marginTop="5dp">
+	    
+        <ListView android:id="@+id/listado" style="@style/basicstyle_wc" android:listSelector="#FFF" />
+                    
+	</LinearLayout>
+
+</LinearLayout>
