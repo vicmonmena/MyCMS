@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module>
+  <!-- Inherit our applications main module.                      -->
+  <inherits name='es.vicmonmena.mycms.MyCMS' />
+
+  <!-- Specify the path to any remote services.                   -->
+  <servlet path="/MyCMS/greet" class="es.vicmonmena.mycms.server.GreetingServiceImpl" />
+
+</module>
